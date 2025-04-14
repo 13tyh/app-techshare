@@ -1,8 +1,10 @@
 'use client';
 import Container from '@/components/container';
 import {Button} from '@/components/ui/button';
+import {useLoginModal} from '@/features/auth/hooks/use-login-modal';
 
 const CallToAction = () => {
+  const {open} = useLoginModal();
   return (
     <div className="bg-neutral-100">
       <Container className="py-32 md:py-40 text-center">
@@ -13,7 +15,7 @@ const CallToAction = () => {
           あなたの経験や知識が、誰かの助けになります。今すぐTechShareで技術記事の共有を始めましょう。
         </p>
         <div className="mt-8">
-          <Button onClick={() => {}} size="lg">
+          <Button onClick={open} size="lg">
             無料で始める
           </Button>
         </div>
