@@ -8,6 +8,13 @@
       "when": 1744625008673,
       "tag": "0000_smart_amazoness",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1744867770415,
+      "tag": "0001_tense_rogue",
+      "breakpoints": true
     }
   ]
 }
